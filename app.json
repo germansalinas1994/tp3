@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "tp3-moviles-auth0",
+    "slug": "tp3auth0",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "com.tp3auth0.auth0",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tp3auth0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tp3auth0"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-auth0",
+        {
+          "domain": "apps-moviles.us.auth0.com",
+          "clientId": "7FnvPpK0fullYNmtqkXI9d40Y5r4ulUF"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ffedc87c-de1f-4ad2-81e4-e6852f145bdc"
+      }
+    },
+    "owner": "gsalinas1994",
+    "runtimeVersion": "1.0.0",  // Cambia el valor por una versión fija
+    "updates": {
+      "url": "https://u.expo.dev/ffedc87c-de1f-4ad2-81e4-e6852f145bdc"
+    }
+  }
+}
