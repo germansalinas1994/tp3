@@ -1,50 +1,29 @@
-# Welcome to your Expo app 👋
+# Proyecto tp3auth0
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Iniciar la Aplicación
 
-## Get started
-
-1. Install dependencies
-
+### Requisitos previos
+1. **Instalar dependencias**: Ejecutar el siguiente comando para instalar las dependencias del proyecto (en la carpeta contenedora del proyecto):
    ```bash
-   npm install
-   ```
+   npm i
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
+Consideraciones de Auth0
+Nota: Auth0 NO funciona con Expo Go, por lo que para probar la aplicación y su correcto funcionamiento se debe hacerlo directamente usando un development build o desde el archivo APK adjunto en el mail.
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Configuración del archivo .env
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+En caso de no existir, crear el archivo .env con las siguientes variables de entorno
 
-## Get a fresh project
+# Las variables de entorno se declaran como EXPO_PUBLIC_VARIABLE=valor
+EXPO_PUBLIC_DOMAIN=apps-moviles.us.auth0.com
+EXPO_PUBLIC_CLIENT_ID=7FnvPpK0fullYNmtqkXI9d40Y5r4ulUF
+#para firebase
+EXPO_PUBLIC_apiKey=AIzaSyAwS5KA2xwNWcYABa93minQkCDBE5zqNFI
+EXPO_PUBLIC_authDomain=tp3-moviles-a5f5a.firebaseapp.com
+EXPO_PUBLIC_projectId=tp3-moviles-a5f5a
+EXPO_PUBLIC_storageBucket=tp3-moviles-a5f5a.appspot.com
+EXPO_PUBLIC_messagingSenderId=678520878817
+EXPO_PUBLIC_appId=1:678520878817:web:062756650617b74bf029a0
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
